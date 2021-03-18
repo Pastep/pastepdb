@@ -115,6 +115,19 @@ class pastepdb:
         
         return result[0]
     
+    def all(self, database):
+        config_file = self.__read_config()
+        if not database in config_file:
+            raise LookupError('ERROR: Database not found in config file')
+        files = self.__list_files(path=f"{self.database_folder}/{database}")
+        result = []
+        for file in files:
+            file = open(f"{self.database_folder}/{database}/{file}", 'r')
+            data = loads(file.read())
+            result.append(data)
+        
+        return result
+    
     def update(self, database, where, new_values):
 
         if 'id' in where:
