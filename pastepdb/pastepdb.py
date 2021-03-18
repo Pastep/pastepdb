@@ -201,7 +201,7 @@ class pastepdb:
                     remove(result)
                     return True
                 else:
-                    raise LookupError("ERROR: There's more than 1 data that has same params.")
+                    raise LookupError("ERROR: There is more than 1 data that has same params.")
             else:
                 raise LookupError(f"ERROR: There's no data that has {where} in it...")
         else:
