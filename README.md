@@ -121,6 +121,12 @@ response = pastepdb.get(database='users', where={
 })
 print(response) # Will return a DICT object with data 
 ```
+- #### All method:
+```py
+# Recived list is sample
+response = pastepdb.all(database='users')
+print(response) # Will return a list object with data 
+```
 
 ### Update Data:
 - ### Method 1: (Using file id)
