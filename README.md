@@ -23,7 +23,7 @@ It makes a seperated file for each data and it can index them quickly
 
 ## Installation
 
-Dillinger requires [Python](https://python.org) v3.6+ to run.
+PastepDB requires [Python](https://python.org) v3.6+ to run.
 
 Install PastepDB using PIP
 
