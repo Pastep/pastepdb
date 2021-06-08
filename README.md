@@ -171,7 +171,7 @@ response = pastepdb.delete(database='users', where={
 })
 print(response) # Will return True if operation is successful
 ```
-
+Good documentation, isn't it? :)
 ## License
 
 MIT
